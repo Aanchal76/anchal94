@@ -1,0 +1,43 @@
+-- Adminer 4.6.2 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+DROP TABLE IF EXISTS `userdetail`;
+CREATE TABLE `userdetail` (
+  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `fname` varchar(50) NOT NULL,
+  `lname` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `age` int(50) NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `gender` varchar(50) NOT NULL,
+  `education` varchar(50) NOT NULL,
+  `skills` varchar(50) NOT NULL,
+  `dateposted` date NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `userdetail` (`id`, `fname`, `lname`, `email`, `age`, `location`, `gender`, `education`, `skills`, `dateposted`) VALUES
+(1,	'anchal',	'agarwal',	'anchal.agarwal1994@gmail.com',	21,	'hapur',	'female',	'mca',	'html,css,php',	'2018-03-20'),
+(2,	'anu',	'garg',	'anu@gmail.com',	23,	'ghaziabad',	'female',	'bca',	'php',	'2018-03-20'),
+(4,	'nikhil',	'agarwal',	'nikhil@gmail.com',	20,	'hapur',	'male',	'mca',	'C',	'2018-03-20'),
+(5,	'menu',	'goel',	'menugoel3@gmail.com',	20,	'merrut',	'female',	'bba',	'php',	'2018-03-21'),
+(6,	'renu',	'goel',	'renu@gmail.com',	21,	'ghaziabad',	'female',	'bca',	'html',	'2018-03-21'),
+(7,	'muskan',	'agarwal',	'muskan24@gmail.com',	21,	'Hapur, Uttar Pradesh, India',	'female',	'bba',	'html',	'2018-03-21'),
+(10,	'ram',	'agarwal',	'ram@gmail.com',	24,	'Ghaziabad, Uttar Pradesh, India',	'male',	'bba',	'C',	'2018-03-21'),
+(11,	'krishna',	'garg',	'krishna@gmail.com',	25,	'noida',	'male',	'bsc',	'C',	'2018-03-21'),
+(12,	'vansh',	'kansal',	'vasu34@gmail.com',	20,	'hapur',	'male',	'bca',	'php',	'2018-03-21'),
+(13,	'hammad',	'hammad',	'gannad@gnail.com',	21,	'ghaziabad',	'male',	'select',	'java',	'2018-03-22'),
+(15,	'mayank',	'kansal',	'mayank34@gmail.com',	23,	'Ghaziabad Purana Bus Adda, Block J, Patel Nagar 1, Patel Nagar, Ghaziabad, Uttar Pradesh',	'male',	'bca',	'php',	'2018-03-22'),
+(16,	'Akash',	'Sharma',	'akashsharma0717@gmail.com',	21,	'Delhi, India',	'male',	'select',	'java',	'2018-03-23'),
+(17,	'kanika',	'garg',	'kanika7@gmail.com',	20,	'Dehradun, Uttarakhand, India',	'female',	'bsc',	'php,C,html',	'2018-03-23'),
+(18,	'arjun',	'sagar',	'arjun@gmail.com',	23,	'Ghaziabad, Uttar Pradesh, India',	'male',	'bba',	'',	'2018-03-23'),
+(19,	'karan',	'dey',	'karan@gmail.com',	19,	'Delhi, India',	'male',	'bca',	'java,php',	'2018-03-23'),
+(20,	'Doly',	'pal',	'doly3@gmail.com',	23,	'Hyderabad, Telangana, India',	'female',	'bsc',	'C,html',	'2018-03-25'),
+(21,	'gudia',	'Sharma',	'gudia@gmail.com',	19,	'Hapur, Uttar Pradesh, India',	'female',	'bba',	'java,php',	'2018-03-25');
+
+-- 2018-03-26 05:08:47
